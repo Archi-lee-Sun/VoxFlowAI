@@ -1,5 +1,23 @@
 # VoxFlow AI
 
+## Desktop application
+
+The desktop interface is a PySide6 application. Install the project dependencies, then
+launch it from the project directory:
+
+```bash
+python -m pip install -r requirements.txt
+python main.py
+```
+
+The interface records mono WAV audio through Qt Multimedia, passes its temporary file
+to `process_audio(audio_file_path)`, and plays returned MP3 bytes through Qt Multimedia.
+Allow microphone access in your operating system settings. PySide6 supplies both the
+widgets and the Qt Multimedia audio capture and playback components.
+
+The main window is implemented in `main.py`; recording and WAV file creation live in
+`audio_recorder.py`. Backend configuration still comes from the existing `.env` values.
+
 VoxFlow AI is a desktop voice-enabled AI assistant built with Python, LangGraph, Gemini, and ElevenLabs.
 
 The project is intentionally small and focused. The goal is to build a clean voice-agent workflow in one day while demonstrating:

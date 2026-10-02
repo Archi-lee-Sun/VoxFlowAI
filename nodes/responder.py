@@ -26,4 +26,4 @@ def response_node(state: AgentState) -> dict:
 
     response = llm.invoke(messages)
 
-    return {"response_text": response.content}
+    return {"response_text": str(response.text)}

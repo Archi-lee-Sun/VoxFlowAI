@@ -24,5 +24,5 @@ def process_audio(audio_file_path: str):
     return {
         "user_text": user_text,
         "response_text": response_text,
-        "audio": None,i 
+        "audio": None,
     }

@@ -29,9 +29,10 @@ class NotesStore :
 
 
 
-def save_note(note: str) -> None :
+def save_note(note: str) -> str :
     store = NotesStore()
     store.add_note(note)
+    return "Note saved successfully."
 
 def get_notes() -> list[str] :
     store = NotesStore()
