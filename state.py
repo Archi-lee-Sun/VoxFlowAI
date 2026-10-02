@@ -6,6 +6,7 @@ class AgentState(TypedDict):
     route: str
     response_mode: str
     selected_tool: str | None
+    tool_input: str | None
     response_text: str
 
 
@@ -18,5 +19,3 @@ class RouterDecision(BaseModel):
         "save_note",
         "get_notes"
     ] | None
-
-
