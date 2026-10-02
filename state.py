@@ -19,3 +19,4 @@ class RouterDecision(BaseModel):
         "save_note",
         "get_notes"
     ] | None
+    tool_input: str | None
